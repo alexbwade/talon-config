@@ -13,11 +13,16 @@
 
 ## Text editing
 
-Hello world (sentence hello world)
-hello_world (snake hello world)
-helloWorld (camel hello world)
-HELLO_WORLD (all caps snake hello world)
-H (ship hotel)
+- **sentence hello world** - Hello world (Capitalize first)
+- **title hello world** - Hello World (Capitalize All Words)
+- **snake hollow world** - hello_world (snake_case)
+- **camel hello world** - helloWorld (camelCase)
+- **all caps hello world** - HELLO WORLD (CAPITALIZE ALL LETTERS)
+- **dotted hello world** - hello.world
+- **dub string hello world** - "hello world" (stringify)
+- **smash hello world** - helloworld (remove spaces)
+- **kebab hello world** - hello-world (kebab-case)
+- **ship harp** - H
 
 ## Mouse
 

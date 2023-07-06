@@ -1,5 +1,19 @@
+# app: "MINGW64"
+# -
 git init:
   insert("git init")
+  key("enter")
+
+git status:
+  insert("git status")
+  key("enter")
+
+git push:
+  insert("git push")
+  key("enter")
+
+git pull:
+  insert("git pull")
   key("enter")
 
 git add:
@@ -30,9 +44,11 @@ git commit amend:
   insert("git amend")
   key("enter")
 
-git status:
-  insert("git status")
-  key("enter")
+git checkout:
+  insert("git co ")
+
+git checkout dash be:
+  insert("git co -b ")
 
 git <user.text>$:
   insert("git {text}")

@@ -2,16 +2,27 @@ os: windows
 -
 save: key("ctrl-s")
 
-soft save:
-  key("ctrl-k")
-  sleep(0.1)
-  key("ctrl-shift-s")
-
 find: key("ctrl-f")
-
 global find: key("ctrl-shift-f")
 
-look: user.move_cursor_to_gaze_point()
+(call | invoke):
+  insert("()")
+  key("left")
+
+
+# look: user.move_cursor_to_gaze_point()  (conflicts with alphabet)
+
+# capital <user.text>$: insert(capitalize(user.text))
+# pascal <user.text>$: TextStuff
+# shout <user.text>$: text!
+# declare/statement <user.text>$: text.
+# ask/wonder <user.text>$: text?
+
+(corelli | coral | choral | quarrel): insert("Karelly")
+
+(dashing | dashi): insert(" - ")
+
+(ls | als): insert("ls -la")
 
 add bullet: insert("- [ ] ")
 
