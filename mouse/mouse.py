@@ -5,10 +5,10 @@ from talon import Context, Module, ctrl
 mod = Module()
 ctx = Context()
 
-
 SCREEN_HEIGHT = 1080
 SCREEN_WIDTH = 1920
-BUFFER = 16
+BUFFER = 16 # 16px buffer for the edge of the screen
+MODIFIER = 20 # 20px modifier for mouse movement
 
 half_width = SCREEN_WIDTH / 2
 half_height = SCREEN_HEIGHT / 2
@@ -43,8 +43,6 @@ POSITIONS = {
   'second bottom': [screen_two_x_center, screen_bottom],
 }
 
-MODIFIER = 20
-
 @mod.action_class
 class Actions:
     def move_mouse_by(x: int, y: int):
@@ -56,25 +54,3 @@ class Actions:
         """Moves the cursor to a certain named location"""
         x, y = POSITIONS[location_name]
         ctrl.mouse_move(x, y)
-
-
-# for cmd in POSITIONS:
-#     @serenade.command(cmd)
-#     async def moveMouse(api):
-#         await moveMouseTo(api, cmd)
-
-# @serenade.command('mouse up <amount>')
-# async def moveMouseUp(api, matches):
-#     await moveMouseBy(api, 0, -getNumber(matches['amount']) * MODIFIER)
-
-# @serenade.command('mouse down <amount>')
-# async def moveMouseDown(api, matches):
-#     await moveMouseBy(api, 0, getNumber(matches['amount']) * MODIFIER)
-
-# @serenade.command('mouse left <amount>')
-# async def moveMouseLeft(api, matches):
-#     await moveMouseBy(api, -getNumber(matches['amount']) * MODIFIER, 0)
-
-# @serenade.command('mouse right <amount>')
-# async def moveMouseRight(api, matches):
-#     await moveMouseBy(api, getNumber(matches['amount']) * MODIFIER, 0)

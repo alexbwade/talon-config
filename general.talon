@@ -2,8 +2,12 @@ os: windows
 -
 save: key("ctrl-s")
 
-find: key("ctrl-f")
-global find: key("ctrl-shift-f")
+(find | search): key("ctrl-f")
+global (find | search): key("ctrl-shift-f")
+
+(capture | copy): key("ctrl-c")
+(plaster | paste): key("ctrl-v")
+(eviscerate | cut): key("ctrl-x")
 
 (call | invoke):
   insert("()")
@@ -19,8 +23,10 @@ global find: key("ctrl-shift-f")
 # ask/wonder <user.text>$: text?
 
 (corelli | coral | choral | quarrel): insert("Karelly")
+(her my | her me): insert("Hermie")
 
 (dashing | dashi): insert(" - ")
+piper: insert(" | ")
 
 (ls | als): insert("ls -la")
 
