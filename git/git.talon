@@ -53,3 +53,20 @@ git checkout dash be:
 git <user.text>$:
   insert("git {text}")
 
+(envyus | envy amuse | envy muse):
+  insert("nvm use")
+
+cd:
+  insert("cd ")
+
+cd home:
+  insert("cd ~")
+  key("enter")
+
+cd dot dot:
+  insert("cd ..")
+  key("enter")
+
+open with code:
+  insert("code .")
+  key("enter")

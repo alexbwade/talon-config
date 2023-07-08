@@ -14,14 +14,19 @@
 ## Text editing
 
 - **sentence hello world** - Hello world (Capitalize first)
-- **title hello world** - Hello World (Capitalize All Words)
-- **snake hollow world** - hello_world (snake_case)
-- **camel hello world** - helloWorld (camelCase)
 - **all caps hello world** - HELLO WORLD (CAPITALIZE ALL LETTERS)
+- **all down hello world** - hello world (lowercase)
+- **title hello world** - Hello World (Capitalize All Words)
+- **camel hello world** - helloWorld (camelCase)
+- **pascal hello world** - HelloWorld (PascalCase) (default: hammer)
+- **snake hollow world** - hello_world (snake_case)
+- **kebab hello world** - hello-world (kebab-case)
 - **dotted hello world** - hello.world
 - **dub string hello world** - "hello world" (stringify)
 - **smash hello world** - helloworld (remove spaces)
-- **kebab hello world** - hello-world (kebab-case)
+- **packed hello world** - hello::world (Dynamo-style)
+- **padded hello world** - hello world (adds space before and after)
+- **slasher hello world** - /hello/world (/path/to/file)
 - **ship harp** - H
 
 ## Mouse

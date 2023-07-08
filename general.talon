@@ -28,15 +28,12 @@ add bullet: insert("- [ ] ")
 
 # these have unusual default bindings; "fixing" them here
 please: skip()
-
 backspace: key("backspace")
-
 delete: key("delete")
-
 left bracket: key("[")
-
 right bracket: key("]")
-
 left brace: key("{")
-
 right brace: key("}")
+
+rise: edit.page_up()
+bow: edit.page_down()
