@@ -6,6 +6,12 @@
 
 # "blink"
 (blink | blank): mouse_click(2)
+blinker:
+  key("ctrl:down")
+  key("shift:down")
+  mouse_click(2)
+  key("shift:up")
+  key("ctrl:up")
 
 # "duke"
 double click: mouse_click(0, 2)

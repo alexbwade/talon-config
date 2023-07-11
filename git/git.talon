@@ -47,14 +47,31 @@ git commit amend:
 git checkout:
   insert("git co ")
 
-git checkout dash be:
+git checkout (dash be | new):
   insert("git co -b ")
+
+git clear changes:
+  insert("git co -- .")
+  key("enter")
+
+git clean all:
+  insert("git clean -fd")
+  key("enter")
 
 git <user.text>$:
   insert("git {text}")
 
+(and em | np | npm):
+  insert("npm ")
+
 (envyus | envy amuse | envy muse):
   insert("nvm use")
+
+(yarn | yearn | rn | an):
+  insert("yarn ")
+
+rim raff:
+  insert("rm -rf ")
 
 cd:
   insert("cd ")

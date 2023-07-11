@@ -34,6 +34,7 @@ add bullet: insert("- [ ] ")
 
 # these have unusual default bindings; "fixing" them here
 please: skip()
+int: skip()
 backspace: key("backspace")
 delete: key("delete")
 left bracket: key("[")
